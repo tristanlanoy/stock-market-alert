@@ -1,0 +1,38 @@
+{
+    "Table": {
+        "AttributeDefinitions": [
+            {
+                "AttributeName": "alert",
+                "AttributeType": "S"
+            },
+            {
+                "AttributeName": "ticker",
+                "AttributeType": "S"
+            },
+            {
+                "AttributeName": "baseprice",
+                "AttributeType": "N"
+            },
+            {
+                "AttributeName": "down-percentage",
+                "AttributeType": "N"
+            }
+        ],
+        "TableName": "stock_db",
+        "KeySchema": [
+            {
+                "AttributeName": "ticker",
+                "KeyType": "HASH"
+            },
+            {
+                "AttributeName": "alert",
+                "KeyType": "RANGE"
+            }
+        ],
+        "TableStatus": "ACTIVE",
+        "ProvisionedThroughput": {
+            "ReadCapacityUnits": 0,
+            "WriteCapacityUnits": 0
+        }
+    }
+}
