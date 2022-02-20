@@ -6,7 +6,7 @@ import boto3
 dynamodb = boto3.client('dynamodb')
 ddb_table = 'stock_db'
 sns = boto3.client('sns')
-sns_arn = 'arn:aws:sns:eu-west-2:136245050755:stock_topic'
+sns_arn = 'arn:aws:sns:region:id:topic_name'
 
 
 def get_tickeryahoo(ticker_namee):
