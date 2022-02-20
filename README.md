@@ -13,7 +13,7 @@
 
 ## Utilisation
 * [Créer et importer la couche pour le package yahooquery](https://tristanlanoy.com/post/aws-lambda-py-packages/)
-* Créer la base DynamoDb (aws --profile=via dynamodb create-table --cli-input-json dynamodb/stock_db.json)
+* Créer la base DynamoDb (aws dynamodb create-table --cli-input-json dynamodb/stock_db.json)
 * Configurer une rubrique SNS et la renseigner dans le code de la fonction Lambda
 * Importer la fonction lambda
 * Créer une règle EventBridge pour exécuter la fonction lambda de façon planifiée
